@@ -1,0 +1,7 @@
+USA,North America,Red, White, Blue,
+South Korea,Asia,White, Red, Blue,
+Scotland,Europe,White, Blue,
+Japan,North America,Red, White,
+Germany,Europe,Red, Yellow, Black,
+Lake Minnetonka,Minnesota,Magenta, Black, Magenta,
+Atlantis,Bottom of the Ocean,Blue, Green, Blue,

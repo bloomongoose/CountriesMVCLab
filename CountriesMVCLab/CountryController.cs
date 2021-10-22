@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace CountriesMVCLab
@@ -10,13 +11,68 @@ namespace CountriesMVCLab
 
         public CountryController()
         {
-            CountryDB = new List<Country>
+            CountryDB = new List<Country>();
+            FileIO();
+        }
+
+        public void FileIO()
+        {
+            string filepath = @"..\..\..\Countries.txt";
+            if (File.Exists(filepath) == false)
+            {
+                List<Country> defaultList = new List<Country>
             {
                 new Country("USA", "North America", new List<string>{"Red", "White", "Blue"}),
                 new Country("South Korea", "Asia", new List<string>{"White", "Red", "Blue"}),
                 new Country("Scotland", "Europe", new List<string>{"White", "Blue"}),
                 new Country("Japan", "North America", new List<string>{"Red", "White"}),
+                new Country("Germany", "Europe", new List<string>{"Red", "Yellow", "Black"}),
+                new Country("Lake Minnetonka", "Minnesota", new List<string>{"Magenta", "Black", "Magenta"}),
+                new Country("Atlantis", "Bottom of the Ocean", new List<string>{"Blue", "Green", "Blue"}),
             };
+                Console.WriteLine("File no exit. Creating now");
+                StreamWriter writer = new StreamWriter(filepath);
+                foreach(Country c in defaultList)
+                {
+                    //before adding to file, add all colors to string so it can print nicely
+                    string colors = "";
+                    foreach(string color in c.Colors)
+                    {
+                        colors += $"{color}, ";
+                    }
+                    colors = colors.Substring(0, colors.Length - 1);
+                    //prints to file
+                    writer.WriteLine($"{c.Name},{c.Continent},{colors}");
+                }
+                writer.Close();
+
+            }
+
+            //reading file
+            StreamReader reader = new StreamReader(filepath);
+            while (true)
+            {
+                string line = reader.ReadLine();
+                if(line == null)
+                {
+                    //no more file
+                    break;
+                }
+                else
+                {
+                    string[] values = line.Split(",");
+                    string newName = values[0];
+                    string newContinent = values[1];
+                    List<string> newColors = new List<string>();
+                    for(int i = 2; i < values.Length; i++)
+                    {
+                        newColors.Add(values[i]);
+                    }
+
+                    Country newCountry = new Country(newName, newContinent, newColors);
+                    CountryDB.Add(newCountry);
+                }
+            }
         }
 
         public void WelcomeAction()

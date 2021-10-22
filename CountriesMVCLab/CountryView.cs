@@ -23,6 +23,10 @@ namespace CountriesMVCLab
             {
 
                 Console.ForegroundColor = Enum.Parse<ConsoleColor>(color.Trim());
+                if(color == "Black")
+                {
+                    Console.BackgroundColor = ConsoleColor.Gray;
+                }
                 Console.WriteLine($"{color} ");
                 Console.ResetColor();
             }
