@@ -1,0 +1,14 @@
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\bin\Debug\netcoreapp3.1\CountriesMVCLab.exe
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\bin\Debug\netcoreapp3.1\CountriesMVCLab.deps.json
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\bin\Debug\netcoreapp3.1\CountriesMVCLab.runtimeconfig.json
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\bin\Debug\netcoreapp3.1\CountriesMVCLab.runtimeconfig.dev.json
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\bin\Debug\netcoreapp3.1\CountriesMVCLab.dll
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\bin\Debug\netcoreapp3.1\CountriesMVCLab.pdb
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.csproj.AssemblyReference.cache
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.AssemblyInfoInputs.cache
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.AssemblyInfo.cs
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.csproj.CoreCompileInputs.cache
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.dll
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.pdb
+C:\Users\radee\source\repos\CountriesMVCLab\CountriesMVCLab\obj\Debug\netcoreapp3.1\CountriesMVCLab.genruntimeconfig.cache
