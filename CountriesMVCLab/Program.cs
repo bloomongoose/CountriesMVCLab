@@ -9,8 +9,20 @@ namespace CountriesMVCLab
         {
             //TESTING ZONE
 
-            CountryView countryView = new CountryView(new Country("abra", "kadabra", new List<string> { "Red", "Magenta" }));
-            countryView.Display();
+            //List<Country> countries = new List<Country>
+            //{
+            //    new Country("abra", "kadabra", new List<string> { "Red", "Magenta" }),
+            //    new Country("abra", "kadabra", new List<string> { "Red", "Magenta" }),
+            //    new Country("abra", "kadabra", new List<string> { "Red", "Magenta" })
+            //};
+
+            //CountryView countryView = new CountryListView(countries)
+            //countryView.Display();
+
+            CountryController controller = new CountryController();
+
+            controller.WelcomeAction();
+            controller.CountryListAction();
         }
     }
 }

@@ -17,8 +17,13 @@ namespace CountriesMVCLab
         //methods
         public void Display()
         {
-            int i = 1;
-            Countries.ForEach(c => Console.WriteLine($"{i++} {c.Name}"));
+            //int i = 1;
+            //Countries.ForEach(c => Console.WriteLine($"{i++} {c.Name}"));
+
+            for(int i = 0; i < Countries.Count; i++)
+            {
+                Console.WriteLine($"{i} {Countries[i].Name}");
+            }
         }
     }
 }

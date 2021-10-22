@@ -21,7 +21,10 @@ namespace CountriesMVCLab
             Console.WriteLine($"{DisplayCountry.Name} {DisplayCountry.Continent} Colors: ");
             foreach(string color in DisplayCountry.Colors)
             {
+
+                Console.ForegroundColor = Enum.Parse<ConsoleColor>(color.Trim());
                 Console.WriteLine($"{color} ");
+                Console.ResetColor();
             }
         }
     }
